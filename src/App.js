@@ -1,23 +1,21 @@
-import logo from './logo.svg';
-import './App.css';
-
+import Header from './Components/Header/Header.jsx'
+import Card from './Components/Card/card.jsx'
+import './app.scss'
+import Colletion from './Components/Collection/colletion.jsx';
+import Cities from './Components/Cities/Cities.jsx';
+import CTA from './Components/CTA/CTA.jsx'
+import Accordian from './Components/AccordianContainer/AccordianContainer.jsx';
+import Footer from './Components/Footer/Footer.jsx';
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Header />
+      <Card />
+      <Colletion />
+      <Cities />
+      <CTA />
+      <Accordian />
+      <Footer />
     </div>
   );
 }
